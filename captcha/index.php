@@ -1,3 +1,8 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,7 +13,7 @@
     <title>mailing</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="traitement.php" method="post">
         <fieldset>
             <legend>Recevez nos news</legend>
                
