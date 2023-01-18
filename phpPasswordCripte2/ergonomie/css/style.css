@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  margin: 0;
+
+  background-image: url(../img/fond.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 300px;
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+section h1 {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 26px;
+}
+
+section input {
+  display: block;
+  width: 100%;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  height: 40px;
+}
+
+section input[type="text"], section input[type="password"] {
+  margin: 20px 0;
+  border-radius : 6px;
+  opacity: 0.5;
+  transition: 0.7s;;
+}
+
+section input[type="text"]:hover, section input[type="password"]:hover {
+  opacity: 1;
+}
+
+section input[type="submit"] {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  background-color: rgb(12, 151, 144);
+  cursor: pointer;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 20px;
+  transition: 0.7s;
+}
+
+section input[type="submit"]:hover {
+  transform: scale(0.95);
+
+}
+
+section a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  padding: 10px;
+  transition: 0.8;
+  
+}
+
+section a:hover {
+  background-color: #000;
+  opacity: 0.2
+}
+
+::placeholder {
+  text-transform: capitalize;
+}
+
+.error {
+  color : #f75e7c;
+}
+
+.success {
+  color : #3f0;
+}
