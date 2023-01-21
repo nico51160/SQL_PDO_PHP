@@ -1,6 +1,6 @@
 <?php
 
-$dsn = 'mysql:host=localhost;dbname=alphorm;charset=utf8';
+$dsn = 'mysql:host=localhost;dbname=PDO_CALL;charset=utf8';
 $user= 'root';
 $pass= '';
 
