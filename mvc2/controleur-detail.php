@@ -1,10 +1,11 @@
 <?php
-$dsn  = 'mysql:host=localhost;dbname=mvc2;charset=utf8';
-$user = 'root';
-$pass = '';
 
-try {
-    $cnx = new PDO($dsn,$user,$pass);
-} catch(PDOException $e) {
-    echo 'Un probleme est survenu !';
+require('cnx.php');
+require('model.php');
+
+if(isset($_GET['voitID'])) {
+    $data2 = AfficherDetail($cnx, $_GET['voitID']);
+    require('view-detail.php');
+} else {
+    echo 'Une erreur est survenue !';
 }
