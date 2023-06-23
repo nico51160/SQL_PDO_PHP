@@ -4,7 +4,7 @@ $user = 'root';
 $pass = '';
 
 try {
-    new PDO($dsn, $user, $pass);
+    $cnx = new PDO($dsn, $user, $pass);
 } catch(PDOExeption $e) {
     echo 'une erreur est survenue !';
 }
